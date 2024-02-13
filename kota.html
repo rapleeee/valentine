@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Kota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <p>Kamu mau jalan sama aku dimana?</p>
+        <h1 style="text-align: center; color: palevioletred; font-family: 'Courier New', Courier, monospace;">Pilih salah satu ya</h1>
+        <form class="Pilihan">
+            <label>
+                <input type="radio" name="kota" value="malang">Malang dan sekitarnya
+            </label>
+        </form>
+        <form class="Pilihan">
+            <label>
+                <input type="radio" name="kota" value="kediri">Kediri dan sekitarnya
+            </label>
+        </form>
+        <a href="lastpage.html">
+            <button class="btn2">
+                submit
+            </button>
+        </a>
+    </section>
+
+    <script>
+        function clearSelection() {
+          var radios = document.getElementsByName('kota');
+          for (var i = 0; i < radios.length; i++) {
+            radios[i].checked = false;
+          }
+        }
+      </script>
+</body>
+</html>
